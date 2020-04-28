@@ -31,19 +31,15 @@ def main():
 		path = 'test_imgs/'
 		T = []
 
-		test_imgs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-		for k in range(1):
-			model_num = 1300 # 1540
-			print("model num:", model_num)
-			for i in range(len(test_imgs)):
-				index = test_imgs[i]
-				path1 = path + 'far/' + str(index) + '.jpg'
-				path2 = path + 'near/' + str(index) + '.jpg'
-				begin = time.time()
-				generate(path1, path2, './models_mn/', index, output_path='./results/', model_num=model_num)
-				end = time.time()
-				T.append(end - begin)
-				print(T)
+		for i in range(10):
+			index = i + 1
+			path1 = path + 'far/' + str(index) + '.jpg'
+			path2 = path + 'near/' + str(index) + '.jpg'
+			begin = time.time()
+			generate(path1, path2, './model/model.ckpt', index, output_path='./results/')
+			end = time.time()
+			T.append(end - begin)
+			print(T)
 
 
 if __name__ == '__main__':

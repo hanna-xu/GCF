@@ -11,7 +11,7 @@ import time
 from skimage import color, measure, morphology, io
 import matplotlib.pyplot as plt
 
-def generate(path1, path2, model_path, index, model_num, output_path = None):
+def generate(path1, path2, model_path, index, output_path = None):
 	img1 = imread(path1) / 255.0
 	img2 = imread(path2) / 255.0
 	dimension = img1.shape
@@ -46,8 +46,8 @@ def generate(path1, path2, model_path, index, model_num, output_path = None):
 
 		# restore the trained model
 		saver = tf.train.Saver()
-		saver.restore(sess, model_path + str(model_num) + '/' + str(model_num) + '.ckpt')
-		start = time.time()
+		saver.restore(sess, model_path)
+
 		output_mask = sess.run(MASK, feed_dict = {SOURCE1: img1_gray, SOURCE2: img2_gray})
 		output_mask = output_mask[0, :, :, 0]
 
@@ -77,8 +77,7 @@ def generate(path1, path2, model_path, index, model_num, output_path = None):
 		for i in range(c):
 			output_img[:, :, i] = np.multiply(dst2, img1[:, :, i]) + np.multiply((1-dst2),
 			                                                                            img2[:, :, i])
-		end = time.time()
-		# print(end - start)
+
 		imsave(output_path + str(index) + '.jpg', output_img)
 		# imsave(output_path + str(index) + '_mask0.jpg', output_mask)
 		# imsave(output_path + str(index) + '_mask1.jpg', dst1)
