@@ -11,7 +11,7 @@ This is the code of the following paper:
   publisher={IEEE}
 }
 ```
-# Method:
+## Method
 <div align=center><img src="https://github.com/hanna-xu/DDcGAN/blob/master/figures/framework.png" width="600" height="280"/></div><br>
 
 ## Results:
