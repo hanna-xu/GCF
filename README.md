@@ -15,4 +15,4 @@ This is the code of the following paper:
 <div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/method.png" width="800" height="280"/></div><br>
 
 ## Results
-<div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/method.png" width="800" height="400"/></div><br>
+<div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/result.png" width="800" height="400"/></div><br>
