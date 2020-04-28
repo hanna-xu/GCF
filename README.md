@@ -1,5 +1,5 @@
-# GCF
-This is the code of the following paper:
+# GCF-tensorflow
+This is the code of the following paper for multi-focus image fusion:
 ```
 @article{xu2020deep,
   title={A Deep Model for Multi-Focus Image Fusion Based on Gradients and Connected Regions},
@@ -16,3 +16,5 @@ This is the code of the following paper:
 
 ## Results
 <div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/results.png" width="800" height="500"/></div><br>
+
+If you have any question, please email to me (xu_han@whu.edu.cn).
