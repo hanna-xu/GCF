@@ -12,6 +12,6 @@ This is the code of the following paper:
 }
 ```
 ## Method
-<div align=center><img src="https://github.com/hanna-xu/DDcGAN/blob/master/figures/framework.png" width="600" height="280"/></div><br>
+<div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/method.png" width="600" height="280"/></div><br>
 
-## Results:
+## Results
