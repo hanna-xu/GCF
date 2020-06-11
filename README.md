@@ -17,6 +17,7 @@ This is the code of the following paper for multi-focus image fusion:
 ## Results
 <div align=center><img src="https://github.com/hanna-xu/GCF/blob/master/figures/results.png" width="800" height="500"/></div><br>
 
-The training dataset can be downloaded [*here*](https://pan.baidu.com/s/1yy-HuiLjrxmktQ0U2QCw3A) (password: zaiz).
+The training dataset can be downloaded [*here*](https://pan.baidu.com/s/1yy-HuiLjrxmktQ0U2QCw3A) (password: zaiz).<br>
+The code to create your own training dataset can be found [*here*](https://github.com/hanna-xu/utils).
 
 If you have any question, please email to me (xu_han@whu.edu.cn).
